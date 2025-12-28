@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -7,7 +8,7 @@
     <groupId>io.github.biezhi</groupId>
     <artifactId>java11-examples</artifactId>
     <version>1.0-SNAPSHOT</version>
-    
+
     <dependencies>
         <dependency>
             <groupId>com.google.code.gson</groupId>
@@ -15,19 +16,6 @@
             <version>2.8.5</version>
         </dependency>
     </dependencies>
-
-    <repositories>
-        <repository>
-            <id>amit0682</id>
-            <url>https://pkgs.dev.azure.com/amit0682/_packaging/amit0682/maven/v1</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
 
     <build>
         <plugins>
