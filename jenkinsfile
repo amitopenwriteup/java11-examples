@@ -1,0 +1,20 @@
+pipeline {
+    agent any
+    stages {
+        stage ('checkout') {
+            steps {
+            git 'https://github.com/amitopenwriteup/java11-examples.git'
+            }
+        }
+        stage ('packaging') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+        stage ('archving') {
+            steps {
+                 archiveArtifacts 'target/*.jar'
+            }
+        }
+    }
+}
